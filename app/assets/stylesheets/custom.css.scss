@@ -2,7 +2,6 @@
 @import "bootstrap";
 
 
-
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
@@ -13,11 +12,8 @@ $black: #221e1f;
 $black-green: #2e3531;
 
 
-$serif-font: archer, georgia, serif;
+$serif-font: georgia, serif;
 $sans-serif-font: open sans, arial, sans-serif;
-
-
-
 
 /* universal */
 
@@ -39,38 +35,30 @@ textarea {
 
 .center {
   text-align: center;
-}
-
-.center h1 {
-  margin-bottom: 10px;
+  h1 {
+    margin-bottom: 10px;
+  }
 }
 
 /* typography */
 
+
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-}
-
-h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
+  font-size: 1.5em;
   margin-bottom: 30px;
   text-align: center;
-}
-
-h2 {
-  font-size: 2em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: #777;
+  font-family: $sans-serif-font;
+  font-weight: lighter;
+  color: $black-green; 
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.7em;
+  font-family: $sans-serif-font; 
 }
+
+
 
 /* header */
 
@@ -127,7 +115,11 @@ p {
         background-color: $medium-green	; }}}
 
  .navbar-search {
+<<<<<<< HEAD
  	margin-left: 365px;
+=======
+ 	margin-left: 370px;
+>>>>>>> test-style
  	padding-top: 10px;
  }
 
@@ -136,18 +128,15 @@ p {
  	border-radius: 3px;
  }
 
-
-/* footer */
-
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $gray-medium-light;
-  color: $gray-light;
+  border-top: 1px solid #eaeaea;
+  color: #777;
   a {
-    color: $gray;
+    color: #555;
     &:hover {
-      color: $gray-darker;
+      color: #222;
     }
   }
   small {
@@ -163,8 +152,11 @@ footer {
   }
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> test-style
 
 
 
