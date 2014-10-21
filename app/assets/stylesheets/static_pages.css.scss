@@ -3,28 +3,27 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
 
-/* mixins, variables, etc. */
-
-$gray-medium-light: #eaeaea;
-$light-green: #a3c1af;
-$medium-green: #86a291;
-$cream: #fff7e9;
-$black: #221e1f; 
-$black-green: #2e3531;
-
-
-$serif-font: archer, georgia, serif;
-$sans-serif-font: open sans, arial, sans-serif;
-
-
-/*home */
-
-.jumbotron {
-	background: transparent;
-	background-color: $gray-medium-light;
-	border: none;
-
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+  a {
+    color: #555;
+    &:hover {
+      color: #222;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
 }
