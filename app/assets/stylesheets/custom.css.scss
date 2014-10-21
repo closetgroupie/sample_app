@@ -3,6 +3,22 @@
 
 
 
+/* mixins, variables, etc. */
+
+$gray-medium-light: #eaeaea;
+$light-green: #a3c1af;
+$medium-green: #86a291;
+$cream: #fff7e9;
+$black: #221e1f; 
+$black-green: #2e3531;
+
+
+$serif-font: archer, georgia, serif;
+$sans-serif-font: open sans, arial, sans-serif;
+
+
+
+
 /* universal */
 
 html {
@@ -43,7 +59,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
@@ -60,13 +76,13 @@ p {
 
 #logo {
   float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
+  margin-right: 20px;
+  font-family: archer;
+  font-size: 2em;
+  font-weight: lighter;
   color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
+  letter-spacing: 2px;
+  padding-top: 5px;
   &:hover {
     color: #fff;
     text-decoration: none;
@@ -76,8 +92,8 @@ p {
 
 /* navbar*/
 
-.navbar-custom {
-    background-color: #a3c1af;
+.navbar {
+    background-color: #a3c1af;;
     color:#ffffff;
     border-radius:0;
     color: #fff;
@@ -88,38 +104,50 @@ p {
     }
 }
 
-.navbar-custom .navbar-nav > li > a {
+.navbar .navbar-nav > li > a {
     color: white;
+    font-family: $sans-serif-font;
+    text-transform: uppercase;
 }
 
-.navbar-nav {
+.navbar .navbar-nav {
     > li {
       > a {
-        color: green;
+        color: white;
         &:hover,  &:focus {
-          background-color: #a3c1af;
+          background-color: $medium-green;
           color: white; }}}
     > .active {
       > a, > a:hover, > a:focus {
         color: white;
-        background-color: #a3c1af; }}
+        background-color: $light-green; }}
     > .open {
       > a, > a:hover, > a:focus {
-        color: green;
-        background-color: green; }}}
+        color: white;
+        background-color: $medium-green	; }}}
 
-  
+ .navbar-search {
+ 	margin-left: 400px;
+ 	padding-top: 10px;
+ }
 
+ .navbar-search input {
+ 	width: 350px;
+ 	border-radius: 3px;
+ }
+
+
+/* footer */
 
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
+  border-top: 1px solid $gray-medium-light;
+  color: $gray-light;
   a {
-    color: #555;
+    color: $gray;
     &:hover {
-      color: #222;
+      color: $gray-darker;
     }
   }
   small {
@@ -134,7 +162,6 @@ footer {
     }
   }
 }
-
 
 
 
