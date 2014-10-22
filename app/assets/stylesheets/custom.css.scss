@@ -10,6 +10,7 @@ $medium-green: #86a291;
 $cream: #fff7e9;
 $black: #221e1f; 
 $black-green: #2e3531;
+$burnt-orange: #bd5231;
 
 
 $serif-font: georgia, serif;
@@ -33,12 +34,7 @@ textarea {
   resize: vertical;
 }
 
-.center {
-  text-align: center;
-  h1 {
-    margin-bottom: 10px;
-  }
-}
+
 
 /* typography */
 
@@ -121,7 +117,7 @@ p {
  }
 
  .navbar-search input {
- 	width: 350px;
+ 	width: 250px;
  	border-radius: 3px;
  }
 
@@ -148,6 +144,40 @@ footer {
     }
   }
 }
+
+ /* thumbnails landing page */
+
+
+
+.col-md-4 {
+  margin-bottom: 40px;
+}
+
+.thumbnail {
+  border: none;
+  
+}
+
+.caption {
+  margin-top: -10px;
+}
+#artist-name-landing  {
+  color: $black-green;
+  margin-left: 5px;
+  
+}
+
+#price {
+  float: right;
+  color: $burnt-orange;
+  margin-right: 10px;
+}
+
+
+
+
+
+
 
 
 
