@@ -13,8 +13,14 @@ $black-green: #2e3531;
 $burnt-orange: #bd5231;
 
 
-$serif-font: georgia, serif;
+$serif-font: archer, georgia, serif;
 $sans-serif-font: open sans, arial, sans-serif;
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
 
 /* universal */
 
@@ -40,10 +46,11 @@ textarea {
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 1.5em;
+  font-size: 2em;
+  text-transform: lowercase;
   margin-bottom: 30px;
   text-align: center;
-  font-family: $sans-serif-font;
+  font-family: $serif-font;
   font-weight: lighter;
   color: $black-green; 
 }
@@ -52,6 +59,16 @@ p {
   font-size: 1em;
   line-height: 1.7em;
   font-family: $sans-serif-font; 
+}
+
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
 }
 
 
@@ -83,7 +100,7 @@ p {
     color: #fff;
     text-decoration: none;
 
-    &hover {
+    &:hover {
     	background-color: #a3c1af;
     }
 }
@@ -172,6 +189,29 @@ footer {
   color: $burnt-orange;
   margin-right: 10px;
 }
+
+/* sign up form new user */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+.btn {
+  background-color: $burnt-orange;
+  color: white;
+  font-family: $sans-serif-font;
+  &:hover {
+    color: white;
+  }
+}
+
 
 
 
