@@ -44,6 +44,9 @@ textarea {
   resize: vertical;
 }
 
+a, a:active, a:focus {
+outline: none;
+}
 
 
 /* typography */
@@ -222,6 +225,7 @@ input {
 
 .btn:focus {
   color: white;
+  outline: none;
 }
 
 
