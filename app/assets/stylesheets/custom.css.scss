@@ -28,9 +28,13 @@ html {
   overflow-y: scroll;
 }
 
+
+
 body {
   padding-top: 60px;
 }
+
+
 
 section {
   overflow: auto;
@@ -88,6 +92,10 @@ p {
     color: #fff;
     text-decoration: none;
   }
+}
+
+#logo:focus {
+  text-decoration: none;
 }
 
 
@@ -211,6 +219,12 @@ input {
     color: white;
   }
 }
+
+.btn:focus {
+  color: white;
+}
+
+
 
 
 
