@@ -139,14 +139,15 @@ p {
         background-color: $medium-green	; }}}
 
  .navbar-search {
-
- 	margin-left: 445px;
-  padding-top: 10px;
+    margin-left: 415px;
+    position: absolute;
+    top: 7px;
+  
  }
 
  .navbar-search input {
- 	width: 200px;
-  height: 25px !important;
+ 	width: 210px;
+  height: 35px !important;
  	border-radius: 3px;
  }
 
