@@ -146,7 +146,12 @@ p {
 
  .navbar-search input {
  	width: 200px;
+  height: 25px !important;
  	border-radius: 3px;
+ }
+
+ .dropdown{
+  color: white;
  }
 
 footer {
@@ -177,7 +182,7 @@ footer {
 
 
 
-.col-md-4 {
+.col-md-6 {
   margin-bottom: 40px;
 }
 
