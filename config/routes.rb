@@ -4,12 +4,8 @@ Rails.application.routes.draw do
   get 'users/new'
 
   root             'static_pages#home'
-<<<<<<< HEAD
 
-  get 'sell'    => 'static_pages#sellgoods'
-=======
   get 'sell'   => 'static_pages#sell'
->>>>>>> log-in-log-out
   get 'help'    => 'static_pages#help'
   get 'about'   => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
