@@ -4,10 +4,12 @@ Rails.application.routes.draw do
   get 'users/new'
 
   root             'static_pages#home'
+
+  get 'sell'    => 'static_pages#sellgoods'
   get 'help'    => 'static_pages#help'
   get 'about'   => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
-  get 'terms' => 'static_pages#terms'
+  get 'terms'   => 'static_pages#terms'
   get 'signup'  => 'users#new'
 
   get    'login'   => 'sessions#new'
