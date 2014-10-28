@@ -3,7 +3,7 @@ class StaticPagesController < ApplicationController
   end
 
 
-  def sellgoods 
+  def sell 
   end
 
   def help
