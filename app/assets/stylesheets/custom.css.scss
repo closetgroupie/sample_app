@@ -158,6 +158,7 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
+  position: relative;
   border-top: 1px solid #eaeaea;
   color: #777;
   a {
@@ -224,6 +225,7 @@ input {
   background-color: $burnt-orange;
   color: white;
   font-family: $sans-serif-font;
+  text-transform: uppercase;
   &:hover {
     color: white;
   }
