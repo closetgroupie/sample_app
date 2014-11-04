@@ -36,8 +36,15 @@
    </div>
 </div>
 
+  <% if logged_in? %>
 
-<button class="btn col-md-4 col-md-offset-4">open a booth on sewingly</button>
+    <%= link_to "open a booth on sewingly", register_path, class: "btn col-md-4 col-md-offset-4" %>
+
+  <% else %>
+
+    <%= link_to "login to open booth", login_path, class: "btn col-md-4 col-md-offset-4" %>
+
+  <% end %>
 
 
 
