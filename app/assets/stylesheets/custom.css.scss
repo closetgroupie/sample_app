@@ -13,10 +13,8 @@ $medium-green: #86a291;
 $cream: #fff7e9;
 $black: #221e1f; 
 $black-green: #2e3531;
-$burnt-orange: #bd5231;
 $coral: #ed8269;
 $sherbert: #f27f56;
-
 
 $serif-font: archer, georgia, serif;
 $sans-serif-font: open sans, arial, sans-serif;
@@ -34,11 +32,10 @@ html {
 }
 
 
-
 body {
   padding-top: 60px;
+  background-color: #fefefe;
 }
-
 
 
 section {
@@ -58,9 +55,6 @@ outline: none;
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 2em;
-  text-transform: lowercase;
-  margin-bottom: 30px;
   text-align: center;
   font-family: $serif-font;
   font-weight: lighter;
@@ -71,6 +65,7 @@ p {
   font-size: 1em;
   line-height: 1.7em;
   font-family: $sans-serif-font; 
+  color: $black-green;
 }
 
 /* miscellaneous */
@@ -115,10 +110,9 @@ p {
     border-radius:0;
     color: #fff;
     text-decoration: none;
-
     &:hover {
     	background-color: #a3c1af;
-    }
+  }
 }
 
 .navbar .navbar-nav > li > a {
@@ -141,7 +135,10 @@ p {
     > .open {
       > a, > a:hover, > a:focus {
         color: white;
-        background-color: $medium-green	; }}}
+        background-color: $medium-green	; 
+      }
+    }
+  }
 
  .navbar-search {
     margin-left: 415px;
@@ -151,14 +148,38 @@ p {
  }
 
  .navbar-search input {
- 	width: 210px;
+ 	width: 250px;
   height: 35px !important;
  	border-radius: 3px;
  }
 
+ .glyphicon-search {
+  color: $medium-green;
+  margin-left: -30px;
+}
+
  .dropdown{
   color: white;
  }
+
+ /* Jumbotron */
+
+ .jumbotron {
+  background-image: url(http://i1216.photobucket.com/albums/dd370/kjames1581/jtronnew.jpg);
+  height: 250px;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 !important;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -9px;
+  p { 
+  color: white;
+  }
+}
+
+ /* Footer */  
 
 footer {
   margin-top: 100px;
@@ -172,9 +193,11 @@ footer {
       color: #222;
     }
   }
+  
   small {
     float: left;
   }
+  
   ul {
     float: right;
     list-style: none;
@@ -194,8 +217,8 @@ footer {
 }
 
 .thumbnail {
-  border: none;
-  
+  border: 0 none !important;
+  box-shadow: none !important;
 }
 
 .caption {
@@ -231,8 +254,6 @@ input {
   color: white;
   font-family: $sans-serif-font;
   text-transform: uppercase;
-
-
   &:hover {
     color: white;
   }
