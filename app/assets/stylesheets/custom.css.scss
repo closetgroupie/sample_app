@@ -218,8 +218,9 @@ footer {
 }
 
 .thumbnail {
-  border: 0 none !important;
-  box-shadow: none !important;
+    border: 0 none;
+    box-shadow: none;
+    padding: 0;
 }
 
 .caption {

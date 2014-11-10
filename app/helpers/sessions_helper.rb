@@ -35,9 +35,6 @@ module SessionsHelper
     !current_user.nil?
   end
 
-def has_booth
-  !booth.name.nil?
-end
 
  # Forgets a persistent session.
   def forget(user)

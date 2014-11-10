@@ -1,6 +1,10 @@
 class BoothsController < ApplicationController
 	before_action :logged_in_user
 
+def index
+  @booths = Booth.all
+end
+
 def new
  @booth = Booth.new
   end
@@ -16,6 +20,7 @@ def new
 end
 
   def show
+    @user = User.find(params[:id])
     @booth = Booth.find(params[:id])
   end
 
