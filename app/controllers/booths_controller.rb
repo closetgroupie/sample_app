@@ -25,9 +25,7 @@ end
   end
 
 
- 
-
-  private
+ private
 
     def booth_params
       params.require(:booth).permit(:name)
