@@ -4,11 +4,6 @@ module BoothsHelper
   		Booth.exists?(user_id: user_id)
 	end 
 
-	def user_booth 
-	 Booth.find(session[:user_id])
-	
-	end 
-
 end 
 
 

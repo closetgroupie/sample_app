@@ -6,6 +6,5 @@ class CreateBooths < ActiveRecord::Migration
 
       t.timestamps null: false
     end
-    #add_index :booths, [:user_id]
   end
 end
