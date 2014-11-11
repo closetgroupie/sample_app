@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  get 'booths/new'
-
+  
   get 'password_resets/new'
 
   get 'password_resets/edit'
 
   get 'account_activations/edit'
+
 
   get 'sessions/new'
 

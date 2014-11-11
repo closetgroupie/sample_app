@@ -39,7 +39,7 @@
         <ul class="dropdown-menu pull-right">
           <li><%= link_to "Add New Item", '#' %></li>
           <li><%= link_to "Visit Your Booth", current_user.booth %></li> 
-          <li><%= link_to "Booth Settings", edit_booth_path(current_user) %></li>
+          <li><%= link_to "Booth Settings", edit_booth_path(current_user.booth) %></li>
         </ul>
     </li>
 
