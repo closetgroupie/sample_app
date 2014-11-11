@@ -9,7 +9,7 @@ def new
  @booth = Booth.new
   end
 
- def create
+def create
   @booth = current_user.build_booth(booth_params)
   if @booth.save
     flash[:success] = "Congrats on opening your booth!"
@@ -19,9 +19,23 @@ def new
   end
 end
 
-  def show
+def show
     @user = User.find(params[:id])
     @booth = Booth.find(params[:id])
+end
+
+def edit
+    @booth = Booth.find(params[:id])
+end
+
+def update
+    @booth = Booth.find(params[:id])
+    if @booth.update_attributes(booth_params)
+      flash[:success] = "booth name changed"
+      redirect_to @booth
+    else
+      render 'edit'
+    end
   end
 
 

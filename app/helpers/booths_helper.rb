@@ -5,8 +5,12 @@ module BoothsHelper
 	end 
 
 	def user_booth 
-	Booth.find(session[:user_id])
-
+	 Booth.find(session[:user_id])
+	
 	end 
 
 end 
+
+
+
+
