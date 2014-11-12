@@ -4,6 +4,7 @@ module BoothsHelper
   		Booth.exists?(user_id: user_id)
 	end 
 
+
 end 
 
 
