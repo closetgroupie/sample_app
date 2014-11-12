@@ -18,8 +18,11 @@ Rails.application.routes.draw do
   get 'about'   => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
   get 'terms'   => 'static_pages#terms'
+
   get 'signup'  => 'users#new'
   get 'register' => 'booths#new'
+  get '/categories/:id' =>'categories#show'
+
 
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
