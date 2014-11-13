@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   has_one :booth, dependent: :destroy
 
 
+
 	attr_accessor :remember_token, :activation_token, :reset_token
   before_save   :downcase_email
   before_create :create_activation_digest
