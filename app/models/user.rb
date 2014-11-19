@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   has_one :booth, dependent: :destroy
+  has_many :items, dependent: :destroy
 
 
 
