@@ -2,7 +2,7 @@
 
 class ImageTwoUploader < CarrierWave::Uploader::Base
  include CarrierWave::MiniMagick
-  process resize_to_fit: [500, nil]
+  process resize_to_fit: [570, nil]
 
   if Rails.env.production?
     storage :fog

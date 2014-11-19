@@ -1,18 +1,36 @@
-<h2>
-<%= @item.name %> </h2>
+<% provide(:title, "Item Details") %>
 
-<%= image_tag @item.image_url() if @item.image? %>
+<div class="container item-page-container">
+	<div class = "row">
+		<div class="col-md-7">
+      		<%= image_tag @item.image_url() if @item.image? %>
+    	</div>
+	
+		<div class="col-md-5">
+			<h3><%= @item.name %></h3>
+			<h4><%= number_to_currency @item.price %> </h4>
+			<p><%= @item.description %></p>
+			<%= link_to "Buy Now with PayPal", '#', class: "btn col-md-7", id: "paypal-buy-btn"%>
 
-<p><%= number_to_currency @item.price %></p>
+			<div class="col-md-12" id="item-maker-details">
+				<h3>made by <%= @item.user.name %></h3>
+    			<p><%= @item.description %></p>
+   			</div>
 
-<p><%= @item.description %></p>
+   			<div class="col-sm-12 col-md-12" id="item-booth-details">
+				<h3>from booth <%= @item.user.booth.name %></h3>
+			</div>
+		</div>
 
-<p><%= @item.category.name %> </p>
+		<div class="col-md-7" id="item-page-image">
+      		 <%= image_tag @item.image_two_url() if @item.image_two? %>
+      	</div>
+    </div>
+</div>
 
- <%= image_tag @item.image_two %>
 
- <p>by  <%= @item.user.name %> </p>
 
+	
 
 
 
