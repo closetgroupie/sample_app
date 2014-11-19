@@ -1,9 +1,5 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@font-face {
-  font-family: "archer";
-  src: url(/assets/fonts/Archer-Book-Pro.otf);
-}
 
 /* mixins, variables, etc. */
 
@@ -86,7 +82,7 @@ p {
 #logo {
   float: left;
   margin-right: 20px;
-  font-family: archer;
+  font-family: cookie;
   font-weight: lighter;
   font-size: 2em;
   color: #fff;
