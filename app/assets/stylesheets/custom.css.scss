@@ -16,7 +16,7 @@ $black-green: #2e3531;
 $coral: #ed8269;
 $sherbert: #f27f56;
 
-$serif-font: archer, georgia, serif;
+$serif-font: georgia, serif;
 $sans-serif-font: open sans, arial, sans-serif;
 
 @mixin box_sizing {
@@ -55,10 +55,11 @@ outline: none;
 
 
 h1, h2, h3, h4, h5, h6 {
-  text-align: center;
+  
   font-family: $serif-font;
   font-weight: lighter;
   color: $black-green; 
+  text-align: center;
 }
 
 p {
@@ -166,17 +167,18 @@ p {
  /* Jumbotron */
 
  .jumbotron {
-  background-image: url(http://i1216.photobucket.com/albums/dd370/kjames1581/jtronnew.jpg);
-  height: 250px;
+  background-image: url(http://i1216.photobucket.com/albums/dd370/kjames1581/sewhome.jpg);
+  height: 500px;
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0 !important;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
   margin-top: -9px;
-  p { 
+  p, h2, h1{ 
   color: white;
+  text-align: left;
   }
 }
 
