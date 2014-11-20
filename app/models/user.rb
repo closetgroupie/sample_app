@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
   has_one :booth, dependent: :destroy
   has_many :items, dependent: :destroy
 
-
+  mount_uploader :avatar, AvatarUploader
 
 	attr_accessor :remember_token, :activation_token, :reset_token
   before_save   :downcase_email

@@ -67,6 +67,12 @@ p {
   color: $black-green;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+
+
 /* miscellaneous */
 
 .debug_dump {
@@ -118,6 +124,7 @@ p {
     color: white;
     font-family: $sans-serif-font;
     text-transform: uppercase;
+    font-weight: normal;
 }
 
 .navbar .navbar-nav {
@@ -323,8 +330,25 @@ font-family: $sans-serif-font;
   margin-left: 5px;
 }
 
+/* user profile page */
 
+.user-profile {
+  margin-top: 50px;
+}
 
+#user-location {
+  font-style: italic;
+  margin-top: -8px;
+} 
+
+.plus-btn {
+  color: white;
+  padding-right: 10px;
+}
+
+.follow-btn {
+  margin-bottom: 50px;
+}
 
 
 

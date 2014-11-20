@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141118171121) do
+ActiveRecord::Schema.define(version: 20141120195138) do
 
   create_table "booths", force: true do |t|
     t.string   "name"
@@ -58,6 +58,9 @@ ActiveRecord::Schema.define(version: 20141118171121) do
     t.string   "reset_digest"
     t.datetime "reset_sent_at"
     t.boolean  "admin",             default: false
+    t.string   "avatar"
+    t.text     "about"
+    t.string   "location"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
