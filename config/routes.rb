@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   root             'static_pages#home'
 
-  get 'sell'   => 'static_pages#sell'
+  get 'sell'    => 'static_pages#sell'
   get 'help'    => 'static_pages#help'
   get 'about'   => 'static_pages#about'
   get 'contact' => 'static_pages#contact'

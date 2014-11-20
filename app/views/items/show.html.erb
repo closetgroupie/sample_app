@@ -12,15 +12,18 @@
 			<p><%= @item.description %></p>
 			<%= link_to "Buy Now with PayPal", '#', class: "btn col-md-7", id: "paypal-buy-btn"%>
 
+
 			<div class="col-md-12" id="item-maker-details">
-				<h3>made by <%= @item.user.name %></h3>
+				<h3>made by <%= @item.user.name %><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></h3>
     			<p><%= @item.description %></p>
    			</div>
 
    			<div class="col-sm-12 col-md-12" id="item-booth-details">
-				<h3>from booth <%= @item.user.booth.name %></h3>
+				<h3>from booth <%= @item.user.booth.name %><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></h3>
+				<p>Buyers say?<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> (2 Reviews)</p>
 			</div>
 		</div>
+		<span class="divider">
 
 		<div class="col-md-7" id="item-page-image">
       		 <%= image_tag @item.image_two_url() if @item.image_two? %>

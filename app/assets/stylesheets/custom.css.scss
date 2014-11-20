@@ -11,6 +11,8 @@ $black: #221e1f;
 $black-green: #2e3531;
 $coral: #ed8269;
 $sherbert: #f27f56;
+$pink: #f16c85;
+$gray-medium: #9f9f9f;
 
 $serif-font: georgia, serif;
 $sans-serif-font: open sans, arial, sans-serif;
@@ -291,15 +293,34 @@ font-family: $sans-serif-font;
 }
 
 #item-maker-details {
-  padding-top: 100px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  border-top: 1px solid $gray-medium-light;
 }
 
 #item-booth-details {
-  padding-top: 100px;
+  padding-top: 15px;
+  border-top: 1px solid $gray-medium-light; 
 }
 
 #paypal-buy-btn {
   margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.glyphicon-plus {
+  margin-left: 15px;
+  color: $light-green;
+}
+
+.glyphicon-heart {
+  margin-left: 15px;
+  color: $gray-medium;
+}
+
+.glyphicon-thumbs-up {
+  color: $black-green;
+  margin-left: 5px;
 }
 
 
