@@ -110,7 +110,13 @@ p {
 /* navbar*/
 
 .navbar {
-    background-color: #a3c1af;;
+    background-color: #a3c1af;
+    background: -webkit-linear-gradient(#bfddcb,#a3c1af); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#bfddcb, #a3c1af); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#bfddcb, #a3c1af); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#bfddcb, #a3c1af); /* Standard syntax */
+
+    border-bottom: 1px solid #8fa496;
     color:#ffffff;
     border-radius:0;
     color: #fff;
@@ -233,13 +239,12 @@ footer {
 .caption {
   margin-top: -10px;
 }
-#artist-name-landing  {
+#item-maker-partial   {
   color: $black-green;
   margin-left: 5px;
-  
 }
 
-#price {
+#item-price-partial {
   float: right;
   color: $coral;
   margin-right: 10px;
@@ -260,6 +265,12 @@ input {
 
 .btn {
   background-color: $coral;
+  background: -webkit-linear-gradient(#f79074,$coral); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#f79074, $coral); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#f79074, $coral); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#f79074, $coral); /* Standard syntax */
+
+  border: 1px solid #c96c5d;
   color: white;
   font-family: $sans-serif-font;
   text-transform: uppercase;
@@ -333,7 +344,9 @@ font-family: $sans-serif-font;
 /* user profile page */
 
 .user-profile {
-  margin-top: 50px;
+  margin-top: 30px;
+  border-bottom: 1px solid $gray-medium-light; 
+  padding-bottom: 0;
 }
 
 #user-location {
@@ -344,12 +357,16 @@ font-family: $sans-serif-font;
 .plus-btn {
   color: white;
   padding-right: 10px;
+
 }
 
 .follow-btn {
   margin-bottom: 50px;
 }
 
+.user-profile-info {
+  margin-left: -120px;
+}
 
 
 

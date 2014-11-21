@@ -4,7 +4,7 @@ class ItemsController < ApplicationController
   before_action :correct_user, only: [:edit, :update, :destroy]
 
 	def index
-  		@items = Item.all
+  	@items = Item.where.not(category_id: 1)
 	end
 
 	def new

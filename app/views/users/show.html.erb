@@ -2,19 +2,22 @@
 
 <div class="container user-profile">
 	<div class="row">
-		<div class="col-md-4">
+		<div class ="col-md-3 col-md-offset-5">
       		<%= image_tag @user.avatar_url %>
-		</div>
-
-		<div class="col-md-8">
-    		<h3><%= @user.name %></h3>
+      	</div>
+      	
+      	<div class ="col-md-3 user-profile-info">
+      		<h4><%= @user.name %></h4>
     		<p id="user-location">in <%= @user.location %></p>
-    		<button type="button" class="btn follow-btn"><span class="glyphicon glyphicon-plus plus-btn" aria-hidden="true"></span>Follow</button>
-    		<p class="bold">About me</p>
+    		<button type="button" class="btn follow-btn">Follow</button>
+      	</div>
+
+      	<div class ="col-md-6 col-md-offset-4">
     		<p class=><%= @user.about %></p>
     	</div>
-	</div>
+    </div>
 </div>
+
 
 	<div class="col-md-12 text-center">
       	<h3>My booth <%= @user.booth.name %></h3>
@@ -24,4 +27,5 @@
       	<h3>My Favorites</h3>
 	</div>
 </div>
+
 

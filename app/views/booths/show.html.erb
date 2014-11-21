@@ -1,6 +1,12 @@
- <h2 class="text-center">
- 	 <%= @booth.name %>
- </h2>
+<% provide(:title, @booth.name) %>
+
+<h2 class="text-center"><%= @booth.name %></h2>
+
+<div class="container">
+  <div class="row">
+    <%= render @booth.user.items %>
+  </div>
+</div>
 
  
 

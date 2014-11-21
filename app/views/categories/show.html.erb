@@ -1,3 +1,9 @@
 <% provide(:title, @category.name) %>
 <h2 class ="text-center"><%= @category.name %></h2>
 <p class ="text-center">Browse supplies from specialty shops and artists'closets.</p>
+
+<div class="container">
+  <div class="row">
+    <%= render @category.items %>
+  </div>
+</div>

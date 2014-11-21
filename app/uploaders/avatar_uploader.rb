@@ -2,7 +2,7 @@
 
 class AvatarUploader < CarrierWave::Uploader::Base
 include CarrierWave::MiniMagick
-  resize_to_fill(360, 360, gravity = 'Center') 
+  resize_to_fill(150, 150, gravity = 'Center') 
   
   if Rails.env.production?
     storage :fog
