@@ -17,6 +17,7 @@ development: &default
   # device_ipaddress: "127.0.0.1"
 test:
   <<: *default
+
 production:
   mode: live
   username: USERNAME
