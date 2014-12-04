@@ -28,7 +28,7 @@ gem 'omniauth-facebook'
 gem 'koala'
 
 #paypal integration
-
+gem 'paypal-sdk-adaptivepayments'
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
