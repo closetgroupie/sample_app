@@ -24,6 +24,7 @@ Rails.application.routes.draw do
   get '/categories/:id' =>'categories#show'
 
 
+
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'

@@ -31,7 +31,7 @@ class BoothsController < ApplicationController
   def update
     @booth = Booth.find(params[:id])
       if @booth.update_attributes(booth_params)
-      flash[:success] = "booth name changed"
+      flash[:success] = "booth details changed"
       redirect_to @booth
       else
       render 'edit'
@@ -42,7 +42,7 @@ class BoothsController < ApplicationController
  private
 
   def booth_params
-    params.require(:booth).permit(:name)
+    params.require(:booth).permit(:name, :paypal_email)
   end
 
   def correct_user

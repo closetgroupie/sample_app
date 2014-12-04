@@ -1,10 +1,12 @@
 <div class="col-sm-4 col-md-4">
     <div class="thumbnail">
-      	<%= link_to image_tag item.image.url(:thumb) %>
-      </div>
+		<%= link_to item_path(item) do %>
+  		<%= image_tag(item.image.url(:thumb)) %>
+		<% end %>
+	</div>
      	
     <div class="caption">
-      	<span id="item-maker-partial">by <%= link_to item.user.name%></span>
+      	<span id="item-maker-partial">by <%= link_to item.user.name %></span>
       	<span class="pull-right" id="item-price-partial"> <%= number_to_currency item.price %></span>
     </div>
 </div>

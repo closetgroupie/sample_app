@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141121183657) do
+ActiveRecord::Schema.define(version: 20141121212951) do
 
   create_table "booths", force: true do |t|
     t.string   "name"
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.string   "paypal_email"
   end
 
   add_index "booths", ["user_id"], name: "index_booths_on_user_id"
