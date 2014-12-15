@@ -1,7 +1,8 @@
 class StaticPagesController < ApplicationController
   def home
-  @items = Item.where.not(category_id: 1)
-  end
+  @items = Item.all
+  #where.not(category_id: 1)
+end
 
   def sell 
   end

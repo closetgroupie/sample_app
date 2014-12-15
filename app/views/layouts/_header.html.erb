@@ -20,12 +20,13 @@
 
       <ul class = "nav navbar-nav pull-left">
         <li><%= link_to "Community Threads", '#' %></li>
-      </ul>
-
-      <form class="navbar-search">
+        <li><form class="navbar-search">
         <input type="text" class="search-query" placeholder=" search"/>
         <span class="glyphicon glyphicon-search"></span>
-      </form> 
+      </form> </li>
+      </ul>
+
+      
 
 <% if logged_in? && has_booth?(current_user.id) %>
     

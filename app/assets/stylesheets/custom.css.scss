@@ -153,11 +153,9 @@ p {
   }
 
  .navbar-search {
-    margin-left: 415px;
-    position: absolute;
-    top: 7px;
-  
- }
+  position: relative;
+  top: 7px;
+  }
 
  .navbar-search input {
  	width: 250px;
@@ -168,7 +166,8 @@ p {
 
  .glyphicon-search {
   color: $medium-green;
-  margin-left: -30px;
+  position: relative;
+  right: 25px;
 }
 
  .dropdown{
@@ -179,7 +178,7 @@ p {
 
  .jumbotron {
   background-image: url(http://i1216.photobucket.com/albums/dd370/kjames1581/sewhome.jpg);
-  height: 500px;
+  height: 450px;
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
@@ -187,10 +186,15 @@ p {
   font-weight: bold;
   text-align: left;
   margin-top: -9px;
-  p, h2, h1{ 
+  p, h2, h1, h3, h4{ 
   color: white;
   text-align: left;
   }
+}
+
+.jumbotron-two {
+  background-image: url(http://i1216.photobucket.com/albums/dd370/kjames1581/knitting.jpg);
+  height: 300px;
 }
 
  /* Footer */  
@@ -234,6 +238,7 @@ footer {
     border: 0 none;
     box-shadow: none;
     padding: 0;
+
 }
 
 .caption {
@@ -326,20 +331,17 @@ font-family: $sans-serif-font;
   margin-bottom: 30px;
 }
 
-.glyphicon-plus {
-  margin-left: 15px;
-  color: $light-green;
+.item-images {
+
+
 }
 
-.glyphicon-heart {
-  margin-left: 15px;
-  color: $gray-medium;
+/* item partial */
+
+.item {
+  margin-bottom: 50px;
 }
 
-.glyphicon-thumbs-up {
-  color: $black-green;
-  margin-left: 5px;
-}
 
 /* user profile page */
 
@@ -390,6 +392,8 @@ font-family: $sans-serif-font;
     display: block;
   }
 }
+
+
 
 
 

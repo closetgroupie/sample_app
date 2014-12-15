@@ -2,47 +2,61 @@
 
 <div class="container item-page-container">
 	<div class = "row">
-		<div class="col-md-7">
+		
+    <div class="col-md-6">
+      <div class= "thumbnail">
       		<%= image_tag @item.image_url() if @item.image? %>
-    	</div>
-	
-		<div class="col-md-5">
-			<h3><%= @item.name %></h3>
-			<h4><%= number_to_currency @item.price %> </h4>
-			<p><%= @item.description %></p>
-			<%= link_to "Buy Now with PayPal", '#', class: "btn col-md-7", id: "paypal-buy-btn"%>
+          <br></br>
+          <%= image_tag @item.image_two_url() if @item.image_two? %>
+          <br></br>
+      </div>
+    </div>
 
+    <div class="col-md-6">
+		  <h3><%= @item.name %></h3>
+		  
+      <h4><%= number_to_currency @item.price %> </h4>
+      
+      <p><%= @item.description %></p>
+       
+       <p>by<%= link_to @item.user do %>
+       <%= @item.user.name %>
+       <% end %> </p>
+      
 
-			<div class="col-md-12" id="item-maker-details">
-				<h3>made by <%= @item.user.name %><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></h3>
-    			<p><%= @item.description %></p>
-   			</div>
+      <p>from booth <%= link_to @item.user.booth do %> 
+        <%= @item.user.booth.name %>
+        <% end %> </p>
+		  
+		  <%= link_to "Buy Now with PayPal", '#', class: "btn col-md-8", id: "paypal-buy-btn"%>
 
-   			<div class="col-sm-12 col-md-12" id="item-booth-details">
-				<h3>from booth <%= @item.user.booth.name %><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></h3>
-			</div>
-		</div>
+      <!-- Disqus Integraton -->
 
-		<span class="divider">
+         <div id="disqus_thread"></div>
+            <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'sewingly'; // required: replace example with your forum shortname
 
-		<div class="col-md-7" id="item-page-image">
-      		 <%= image_tag @item.image_two_url() if @item.image_two? %>
-      	</div>
-      	 <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'sewingly'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            })();
+            </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
+  </div>
 </div>
+
+      
+
+      
+
+
+
+
+
 
 
 
