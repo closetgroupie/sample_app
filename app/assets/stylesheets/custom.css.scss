@@ -11,7 +11,6 @@ $black: #221e1f;
 $black-green: #2e3531;
 $coral: #ed8269;
 $sherbert: #f27f56;
-$pink: #f16c85;
 $gray-medium: #9f9f9f;
 
 $serif-font: georgia, serif;
@@ -29,12 +28,10 @@ html {
   overflow-y: scroll;
 }
 
-
 body {
   padding-top: 60px;
   background-color: #fefefe;
 }
-
 
 section {
   overflow: auto;
@@ -48,7 +45,6 @@ a, a:active, a:focus {
 outline: none;
 }
 
-
 /* typography */
 
 
@@ -57,7 +53,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $serif-font;
   font-weight: lighter;
   color: $black-green; 
- 
 }
 
 p {
@@ -70,8 +65,6 @@ p {
 .bold {
   font-weight: bold;
 }
-
-
 
 /* miscellaneous */
 
@@ -105,7 +98,6 @@ p {
 #logo:focus {
   text-decoration: none;
 }
-
 
 /* navbar*/
 
@@ -155,14 +147,27 @@ p {
  .navbar-search {
   position: relative;
   top: 7px;
+  left: 10px;
   }
 
  .navbar-search input {
  	width: 250px;
   height: 35px !important;
- 	border-radius: 3px;
+ 	border-radius: 5px;
   color: $black-green;
- }
+  padding-left: 7px;
+  outline : none;
+}
+
+
+/* Make text disappear w/ click in input */ 
+
+[placeholder]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
+input:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
 
  .glyphicon-search {
   color: $medium-green;
@@ -228,8 +233,6 @@ footer {
 
  /* thumbnails landing page */
 
-
-
 .col-md-6 {
   margin-bottom: 40px;
 }
@@ -253,6 +256,12 @@ footer {
   float: right;
   color: $coral;
   margin-right: 10px;
+  a {
+    color: $coral;
+    &:hover {
+      color: $coral;
+    }
+  }
 }
 
 /* sign up form new user */
@@ -331,17 +340,11 @@ font-family: $sans-serif-font;
   margin-bottom: 30px;
 }
 
-.item-images {
-
-
-}
-
 /* item partial */
 
 .item {
   margin-bottom: 50px;
 }
-
 
 /* user profile page */
 
@@ -355,20 +358,6 @@ font-family: $sans-serif-font;
   font-style: italic;
   margin-top: -8px;
 } 
-
-.plus-btn {
-  color: white;
-  padding-right: 10px;
-
-}
-
-.follow-btn {
-  
-}
-
-.user-profile-info {
- 
-}
 
 .stats {
   overflow: auto;

@@ -23,7 +23,7 @@ Rails.application.routes.draw do
   get 'register' => 'booths#new'
   get '/categories/:id' =>'categories#show'
 
-
+  get "search" => "search#index"
 
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'

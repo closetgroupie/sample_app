@@ -8,8 +8,8 @@
      	
   <div class="caption">
     <span id="item-maker-partial"> 
-      by <%= link_to item.user do %>
-      <%= item.user.name %>
+      <%= link_to item_path(item) do %>
+      <%= item.name %>
       <% end %>
     </span>
       	
