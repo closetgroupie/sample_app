@@ -28,7 +28,16 @@
         <%= @item.user.booth.name %>
         <% end %> </p>
 		  
-		  <%= link_to "Buy Now with PayPal", '#', class: "btn col-md-8", id: "paypal-buy-btn"%>
+		  <% if current_user?(@item.user) %>
+      <%= link_to "delete", @item, class: "btn", method: :delete,
+                                       data: { confirm: "What?! Are you sure?" } %>
+      <%= link_to "edit", edit_item_path, class: "btn" %>
+      <% elsif %>
+                                         
+                                         
+    
+      <%= link_to "Buy Now with PayPal", '#', class: "btn btn-primary col-md-8", id: "paypal-buy-btn"%>
+      <% end %>
 
       <!-- Disqus Integraton -->
 
