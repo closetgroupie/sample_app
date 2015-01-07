@@ -13,7 +13,7 @@
 
       
       <%= f.label :category_id, "choose category" %>
-      <%= f.collection_select :category_id, Category.all, :id, :name %> 
+      <%= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Select a category"}, {class: "form-control"} %>
 
       <%= f.label :price, "price" %>
       <%= f.text_field :price, class: 'form-control' %>
@@ -21,10 +21,13 @@
       <%= f.label :description, "item description" %>
       <%= f.text_area :description, class: 'form-control' %>
 
-      <%= f.file_field :image, accept: 'image/jpeg,image/gif,image/png'  %>
-      <%= f.file_field :image_two, accept: 'image/jpeg,image/gif,image/png'  %>
+      <%= f.label :image, "image one" %>
+      <%= f.file_field :image, accept: 'image/jpeg,image/gif,image/png', class: 'upload' %>
 
-      <%= f.submit "add item", class: "btn" %>
+      <%= f.label :image_two, "image two" %>
+      <%= f.file_field :image_two, accept: 'image/jpeg,image/gif,image/png', class: 'upload' %>
+
+      <%= f.submit "add item", class: "btn btn-primary" %>
 
 
     <% end %>
